@@ -1,0 +1,37 @@
+#include<stdio.h>
+int imparsoma(int a);
+int valorimpar(int b);
+
+
+int main (){
+	
+	int resultado, resultado2, k;
+	printf("digite o número impar ");
+	scanf("%d", &k);
+	
+	imparsoma (k);
+	valorimpar(k);
+	
+	resultado=imparsoma(k);
+	resultado2=valorimpar(k);
+	
+	printf("%d \n\n %d \n\n", resultado2);
+	
+}
+
+int valorimpar(int k){
+	
+	
+	if (k==0){
+		
+		return 1;
+	}
+	else {
+		
+		return ( valorimpar(k-1)%1);
+		
+	}
+	
+	
+	
+}
