@@ -1,0 +1,60 @@
+#include<stdio.h>
+
+
+
+
+main(){
+	
+	
+	int i, j, tamanho;
+	int vetor[30];
+	int auxiliar;
+	
+	
+	
+	printf("digite o tamanho");
+	scanf("%d",&tamanho);
+	
+	
+	for (i=0;i<=tamanho;i++){
+		
+		
+		printf("digite um valor vetor[%d] \n \n ", i);
+		scanf("%d",&vetor[i]);
+	}
+	
+	
+	  for (i=0;i<=tamanho-1;i++){
+	  	
+	  		for (j=i+1;j<=tamanho; j++){
+	  			
+	  			 if ( vetor[i]>vetor[j]){
+	  			 	
+	  			 	
+	  			 	
+	  			 	vetor[i] = auxiliar;
+					   vetor[i]= vetor[j];
+					   vetor[j] = auxiliar;				   
+					   
+					   
+
+					   
+					   
+					   
+					   }
+	  			
+	  			
+			  }
+	  	
+	  	
+	  }
+            for (i=0;i<=tamanho; i++){
+            	
+            	printf("\n\n o vetor ordenado eh vetor[%d]", vetor[i]);
+	
+		
+		
+			}	
+			
+			
+}
