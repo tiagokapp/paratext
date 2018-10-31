@@ -1,0 +1,84 @@
+#include<stdio.h>
+
+int  selecao(int vet[], int m){
+	
+	int j, menor, auxiliar;
+	
+	for (j=0;j<=m -1 ;j++){
+		menor = j;
+		for (int c=j+1;c<=m;j++){
+			
+			if (vet[menor]>vet[c]){
+				
+				menor= c;
+				
+				
+			}
+			if (j!=menor){
+				
+				
+				auxiliar= vet[j];
+				vet[j]= vet[menor];
+				vet[menor] =  auxiliar;
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+ int main () {
+   
+  int vetor [100];
+  int n, valores, i;
+  printf("digite a quantidade de numeros");
+  scanf("%d",&valores);
+  
+  
+  
+  
+  for (i=0;i<=valores;i++)
+  {
+  	printf("digite o valor");
+  	scanf("%d",&vetor[i]);
+  	
+  	
+  	
+  }
+
+  for (i=0;i<=valores;i++){
+  	
+  	
+  printf("o vetor desordenado eh %d \n\n", vetor[i]);
+
+  }
+
+
+    selecao (vetor,valores);
+
+            for (i=0;i<=valores;i++){
+            	
+            	
+            	printf("vetor ordenado	%d\n\n", vetor[i]);
+            	
+			}
+			
+			
+			
+			  //system ("pause")
+			  
+			  
+			   return 0;
+			
+			
+			
+			}
+
